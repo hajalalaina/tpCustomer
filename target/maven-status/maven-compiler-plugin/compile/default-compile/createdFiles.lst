@@ -1,2 +1,9 @@
-mg\mbds\tpcustomer\resources\JakartaEE8Resource.class
+mg\mbds\tpcustomer\session\CustomerManager.class
+mg\mbds\tpcustomer\managedBeans\CustomerMBean.class
 mg\mbds\tpcustomer\JakartaRestConfiguration.class
+mg\mbds\tpcustomer\entities\DiscountCode.class
+mg\mbds\tpcustomer\entities\MicroMarket.class
+mg\mbds\tpcustomer\config\ConfigJSF.class
+mg\mbds\tpcustomer\entities\Customer.class
+.netbeans_automatic_build
+mg\mbds\tpcustomer\resources\JakartaEE8Resource.class
