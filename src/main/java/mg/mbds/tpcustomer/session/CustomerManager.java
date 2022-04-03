@@ -36,4 +36,8 @@ public class CustomerManager {
     }
     // Add business logic below. (Right-click in editor and choose
     // "Insert Code > Add Business Method")
+
+    public Customer getCustomer(int idCustomer) {
+        return em.find(Customer.class, idCustomer);
+    }
 }
