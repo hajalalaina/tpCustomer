@@ -42,8 +42,12 @@
                         <!-- TODO: update below reference to list of available items-->
                         <f:selectItems value="#{fixme}"/>
                     </h:selectOneMenu>
+                     </h:selectOneMenu><!-- comment -->
+                    <h:button id="back" value="Revenir à la liste" outcome="CustomerList"/>
+                    <h:commandButton id="update" value="Enregistrer" action="#{customerDetailsMBean.update}"/>
                 </h:panelGrid>
             </h:form>
+            <h:messages/>
         </f:view>
 
     </h:body>
