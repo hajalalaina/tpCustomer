@@ -14,7 +14,7 @@
         <f:view>
 
 
-            <h:form>
+            <h:form  rendered="#{customerDetailsMBean.details != null}">
                 <h1><h:outputText value="Create/Edit"/></h1>
                 <h:panelGrid columns="2">
                     <h:outputLabel value="CustomerId:" for="customerId" />
@@ -43,10 +43,11 @@
                         <!-- TODO: update below reference to list of available items-->
                         <f:selectItems value="#{customerDetailsMBean.discountCodes}" var="item" itemLabel="#{item.discountCode} (#{item.rate} %)"/>
                     </h:selectOneMenu>
-                    <h:button id="back" value="Revenir à la liste" outcome="CustomerList"/>
                     <h:commandButton id="update" value="Enregistrer" action="#{customerDetailsMBean.update}"/>
                 </h:panelGrid>
             </h:form>
+            <h:outputText value="Aucun client n'a été trouvé l'id #{customerDetailsMBean.idCustomer}!" rendered="#{customerDetailsMBean.details == null}"/>
+            <h:button id="back" value="Revenir à la liste" outcome="CustomerList"/>
             <h:messages/>
         </f:view>
 
